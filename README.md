@@ -1,6 +1,6 @@
 # 🚀 Next.js Admin Dashboard Starter Pack
 
-A modern **Admin Dashboard Boilerplate** built with [Next.js 15](https://nextjs.org), [TailwindCSS](https://tailwindcss.com), [Radix UI](https://www.radix-ui.com/), [Ant Design](https://ant.design/), and [Redux Toolkit](https://redux-toolkit.js.org/).  
+A modern **Admin Dashboard Boilerplate** built with [Next.js 15](https://nextjs.org), [TailwindCSS](https://tailwindcss.com), [Radix UI](https://www.radix-ui.com/), [Shadcn Ui](https://ui.shadcn.com/), and [Redux Toolkit](https://redux-toolkit.js.org/).  
 This starter pack is designed to help developers quickly spin up scalable, customizable, and production-ready admin dashboards.
 
 ---
