@@ -73,7 +73,7 @@ next-js-admin-dashboard/
 
 ## 🚀 Deployment
 
-The easiest way to deploy your ([text](https://Next.js)) Admin Dashboard is via ([Vercel](https://vercel.com)).
+The easiest way to deploy your ([Next.js](https://Next.js)) Admin Dashboard is via ([Vercel](https://vercel.com)).
 
 1. Push your code to GitHub/GitLab/Bitbucket.
 2. Import your project into Vercel.
