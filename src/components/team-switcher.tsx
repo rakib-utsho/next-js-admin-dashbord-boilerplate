@@ -70,7 +70,7 @@ export function TeamSwitcher({
           <SidebarMenuItem>
             <SidebarMenuButton
               onClick={() => setOpen(true)}
-              className="bg-gradient-to-b from-transparent from-0% via-[#1E1E24] via-10% to-[#1E1E24] to-100% text-[#CFFD4C] rounded-xl py-6 w-full text-base sm:text-lg font-medium hover:bg-[#68182E]/80 transition cursor-pointer hover:text-[#CFFD4C]"
+              className="text-white bg-[#AD651D]/80 rounded-xl py-6 w-full text-base sm:text-lg font-medium hover:bg-[#AD651D] transition cursor-pointer hover:text-white"
             >
               <LogOut className="w-4 h-4" />
               <span>Log out</span>
