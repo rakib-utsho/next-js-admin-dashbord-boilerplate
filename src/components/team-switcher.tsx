@@ -96,7 +96,7 @@ export function TeamSwitcher({
           <DialogFooter className="flex justify-center gap-4 mt-4">
             <Button
               onClick={handleLogout}
-              className="flex-1 py-3 px-6 bg-gradient-to-b from-transparent from-0% via-[#1E1E24] via-10% to-[#1E1E24] to-100% text-[#CFFD4C] hover:bg-[#68182E]/60 shadow-2xl hover:text-[#CFFD4C] rounded-full font-medium transition-colors disabled:opacity-50 cursor-pointer"
+              className="flex-1 py-3 px-6 bg-linear-to-b from-transparent from-0% via-[#1E1E24] via-10% to-[#1E1E24] to-100% text-[#CFFD4C] hover:bg-[#68182E]/60 shadow-2xl hover:text-[#CFFD4C] rounded-full font-medium transition-colors disabled:opacity-50 cursor-pointer"
             >
               Log Out
             </Button>
