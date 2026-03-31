@@ -1,9 +1,9 @@
 "use client";
-import { useState, useEffect } from "react";
-import { Controller, useFormContext, useWatch } from "react-hook-form";
 import { cn } from "@/lib/utils";
-import { FiEye, FiEyeOff } from "react-icons/fi";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import { Controller, useFormContext, useWatch } from "react-hook-form";
+import { FiEye, FiEyeOff } from "react-icons/fi";
 
 interface RadioOption {
   value: string;
@@ -11,7 +11,7 @@ interface RadioOption {
   image?: string;
 }
 
-interface MyFormInputProps {
+export interface MyFormInputProps {
   type?: string;
   name: string;
   label?: string;

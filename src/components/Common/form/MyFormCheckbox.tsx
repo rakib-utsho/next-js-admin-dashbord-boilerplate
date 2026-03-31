@@ -1,9 +1,9 @@
 "use client";
+import { cn } from "@/lib/utils";
 import { useEffect } from "react";
 import { Controller, useFormContext, useWatch } from "react-hook-form";
-import { cn } from "@/lib/utils";
 
-interface MyFormCheckboxProps {
+export interface MyFormCheckboxProps {
   name: string; // Field name for react-hook-form
   consentText?: string; // Optional custom text for consent label
   onValueChange?: (value: boolean) => void; // Optional callback for value changes

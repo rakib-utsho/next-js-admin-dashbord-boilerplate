@@ -1,64 +1,94 @@
 "use client";
 
-import type * as React from "react";
 import {
-  Users,
-  User,
-  LayoutGrid,
+  CircleDollarSign,
+  CircleUser,
   Codesandbox,
-  Trophy,
+  LayoutGrid,
+  MessageCircleMore,
+  MonitorCog,
+  ReceiptText,
+  ShieldAlert,
+  User,
+  UserCog,
+  Users,
+  Wallet,
 } from "lucide-react";
+import type * as React from "react";
 
 import { NavMain } from "@/components/nav-main";
-import {
-  Sidebar,
-  SidebarContent,
-  SidebarRail,
-} from "@/components/ui/sidebar";
+import { Sidebar, SidebarContent, SidebarRail } from "@/components/ui/sidebar";
 import { usePathname } from "next/navigation";
 import { TeamSwitcher } from "./team-switcher";
 
 const data = {
-  navMain: [
+  main: [
     {
-      title: "Home",
+      title: "Dashboard",
       url: "/dashboard",
       icon: LayoutGrid,
       isActive: true,
     },
     {
-      title: "User list",
+      title: "Customers",
       url: "/dashboard/users",
       icon: Users,
     },
     {
-      title: "Task Category",
+      title: "Merchants",
       url: "/dashboard/category",
       icon: Codesandbox,
     },
     {
-      title: "Challenges",
+      title: "Invoices",
+      url: "/dashboard/invoices",
+      icon: ReceiptText,
+    },
+    {
+      title: "Payments & Payouts",
       url: "/dashboard/challenges",
-      icon: Trophy,
+      icon: Wallet,
+    },
+    {
+      title: "Messages",
+      url: "/dashboard/messages",
+      icon: MessageCircleMore,
+    },
+  ],
+  other: [
+    {
+      title: "Risk Monitoring",
+      url: "/dashboard/profile",
+      icon: ShieldAlert,
+    },
+    {
+      title: "System Configuration",
+      url: "/dashboard/system-configuration",
+      icon: MonitorCog,
     },
     {
       title: "Profile",
       url: "/dashboard/profile",
-      icon: User,
+      icon: CircleUser,
+    },
+    {
+      title: "Access Management",
+      url: "/dashboard/access-management",
+      icon: UserCog,
     },
   ],
 };
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const pathname = usePathname();
-;
 
   return (
     <Sidebar
-      collapsible= "offcanvas" 
+      collapsible="offcanvas"
+      className="[--sidebar-primary:#10A34B] [--sidebar-primary-foreground:#FFFFFF]"
       {...props}
     >
-      <SidebarContent className="px-4">
+      <SidebarContent className="px-3 pt-2">
         {/* Top: Logo */}
         <TeamSwitcher
           teams={[
@@ -66,11 +96,19 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           ]}
         />
         <NavMain
-          items={data.navMain.map((item) => ({
+          title="Main"
+          items={data.main.map((item) => ({
             ...item,
             isActive:
               pathname === item.url ||
               (item.url === "/dashboard" && pathname === "/"),
+          }))}
+        />
+        <NavMain
+          title="Other"
+          items={data.other.map((item) => ({
+            ...item,
+            isActive: pathname === item.url,
           }))}
         />
       </SidebarContent>

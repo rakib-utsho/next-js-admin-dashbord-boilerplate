@@ -1,10 +1,10 @@
 "use client";
-import { Controller, useFormContext } from "react-hook-form";
 import { cn } from "@/lib/utils";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa"; // Default Icons
 import React, { useState } from "react";
+import { Controller, useFormContext } from "react-hook-form";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa"; // Default Icons
 
-interface MyFormSelectProps {
+export interface MyFormSelectProps {
   name: string;
   label?: string;
   options: {

@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
-import { FormProvider, useForm, useWatch } from "react-hook-form"; // Fixed missing useWatch import
-import { useEffect } from "react";
 import { cn } from "@/lib/utils";
+import { useEffect } from "react";
+import { FormProvider, useForm, useWatch } from "react-hook-form"; // Fixed missing useWatch import
 
-interface MyFormWrapperProps {
+export interface MyFormWrapperProps {
   onSubmit: (data: any) => void;
   className?: string;
   children: React.ReactNode;

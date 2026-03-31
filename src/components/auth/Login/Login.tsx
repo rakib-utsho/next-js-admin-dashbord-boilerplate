@@ -6,7 +6,6 @@ import MyFormInput from "@/components/Common/form/MyFormInput";
 import MyFormWrapper from "@/components/Common/form/MyFormWrapper";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import React from "react";
 
 const AdminLogin = () => {
   const handleLogin = (data: any) => {
@@ -23,6 +22,7 @@ const AdminLogin = () => {
             alt="Admin Login"
             width={1400}
             height={1400}
+            priority
             className="object-cover h-full w-full opacity-60"
           />
 
