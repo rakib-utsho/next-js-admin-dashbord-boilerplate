@@ -6,7 +6,7 @@ import { Toaster } from "sonner";
 
 const DashboardLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <div className="h-screen flex overflow-hidden">
+    <div className="h-screen flex overflow-hidden font-inter-tight">
       <SidebarProvider>
         <AppSidebar />
         <SidebarInset className="flex flex-col flex-1">

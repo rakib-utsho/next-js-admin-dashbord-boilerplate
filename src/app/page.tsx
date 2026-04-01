@@ -3,7 +3,7 @@ import React from "react";
 
 const MainPage = () => {
   return (
-    <div className="">
+    <div className="font-inter-tight">
       <AdminLogin />
     </div>
   );
